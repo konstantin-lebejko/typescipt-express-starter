@@ -1,11 +1,13 @@
 import express, { Express, Request, Response } from 'express';
 
 const app: Express = express();
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 3000;
 
 app.get('/', (req: Request, res: Response) => {
-  console.log('zap');
-  res.send('typescript server run...');
+  res.send('Application is running');
 });
 
-app.listen(port, () => console.log(`app listen on ${port}`));
+app.listen(port, () => {
+  console.log('TODO: Add env here');
+  console.log(`Application is running, visit http://localhost:${port}`);
+});
