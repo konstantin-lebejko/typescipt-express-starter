@@ -1,13 +1,13 @@
 import express, { Express, Request, Response } from 'express';
+import { APP_PORT, NODE_ENV, envFileName } from './config';
 
 const app: Express = express();
-const port = process.env.PORT || 3000;
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Application is running');
+  res.send(`Application is running in ${NODE_ENV} mode`);
 });
 
-app.listen(port, () => {
-  console.log('TODO: Add env here');
-  console.log(`Application is running, visit http://localhost:${port}`);
+app.listen(APP_PORT, () => {
+  console.log(`Loading config from ${envFileName} for ${NODE_ENV} mode`);
+  console.log(`Application is running, visit http://localhost:${APP_PORT}`);
 });
