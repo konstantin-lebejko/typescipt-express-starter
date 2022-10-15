@@ -1,23 +1,6 @@
 # To be changed for a fresh project
 APP_NAME = typescript-express-starter
 
-# NPM aliases
-dev:
-	rm -rf dist
-	npm run dev
-
-build:
-	npm run build
-
-start:
-	npm run start
-
-eslint:
-	npm run eslint
-
-eslint-fix:
-	npm run eslint-fix
-
 # Cache clean up
 clean-cached-files:
 	rm -rf node_modules

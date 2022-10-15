@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
 import { name, version, description } from '../../package.json';
 
-const ENV_FILE_NAME = `.env.${process.env.NODE_ENV || 'development'}`;
+const ENV_FILE_NAME = `.env.${process.env.NODE_ENV}`;
 config({ path: ENV_FILE_NAME });
 
 const APP_NAME = name;
