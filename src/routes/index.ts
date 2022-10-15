@@ -1,5 +1,5 @@
-import healthRouter from './health.route';
+import healthCheckRouter from './health-check.route';
 
 export default {
-  healthRouter,
+  healthCheckRouter,
 };

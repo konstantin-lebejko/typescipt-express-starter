@@ -7,7 +7,7 @@
     "start": "NODE_ENV=production node dist/src/index.js",
     "dev": "concurrently \"npx tsc --watch\" \"NODE_ENV=development nodemon -q dist/src/index.js\"",
     "eslint": "eslint . --ext .ts",
-    "eslint-fix": "eslint . --ext .ts --fix"
+    "eslint:fix": "eslint . --ext .ts --fix"
   },
   "keywords": [],
   "author": "",

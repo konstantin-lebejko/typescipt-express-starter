@@ -20,8 +20,8 @@ app.use(helmet());
 app.use(hpp());
 
 // Routers
-const { healthRouter } = routes;
-app.use('/health', healthRouter);
+const { healthCheckRouter } = routes;
+app.use('/health-check', healthCheckRouter);
 
 // Swagger UI
 const { swaggerSpec } = swaggerConfig;

@@ -1,11 +1,11 @@
 import { Router, Request, Response } from 'express';
 
-// Router URL: /health
-const healthRouter = Router();
+// Router URL: /health-check
+const healthCheckRouter = Router();
 
 /**
  * @openapi
- * /health/:
+ * /health-check/:
  *   get:
  *     summary: Health check
  *     description: Application health check used by ping services and docker
@@ -17,8 +17,8 @@ const healthRouter = Router();
  *       500:
  *          description: Application is not running. Health check failed.
  */
-healthRouter.get(`/`, (req: Request, res: Response) => {
+healthCheckRouter.get(`/`, (req: Request, res: Response) => {
   res.send('Application is running. Health check passed.');
 });
 
-export default healthRouter;
+export default healthCheckRouter;
