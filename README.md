@@ -5,6 +5,7 @@ Minimalistic starter for TypeScript + Express used in several pet projects.
 ## Features:
 
 - Includes TypeScript, Express, nodemon, concurrently, ESLint, Prettier
+- Express tweaks and security improvements like: compression, cookie-parser, cors, helmet, hpp
 
 ## How to run:
 
