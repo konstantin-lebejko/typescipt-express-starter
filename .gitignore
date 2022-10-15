@@ -3,3 +3,7 @@ node_modules
 
 # Build directory
 dist
+
+# Env files
+.env.development
+.env.production
