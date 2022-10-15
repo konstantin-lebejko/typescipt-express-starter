@@ -3,6 +3,7 @@ APP_NAME = typescript-express-starter
 
 # NPM aliases
 dev:
+	rm -rf dist
 	npm run dev
 
 build:
@@ -18,7 +19,7 @@ eslint-fix:
 	npm run eslint-fix
 
 # Cache clean up
-remove-cached-files:
+clean-cached-files:
 	rm -rf node_modules
 	rm -rf dist
 

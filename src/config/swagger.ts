@@ -1,22 +1,21 @@
 import swaggerJSDoc from 'swagger-jsdoc';
-import { version } from '../../package.json';
 import env from './env';
 
-const { APP_NAME } = env;
+const { APP_NAME, APP_VERSION, APP_DESCRIPTION } = env;
 
 // Swagger JSDoc
 const swaggerOptions = {
   swaggerDefinition: {
     info: {
       title: APP_NAME,
-      version,
+      version: APP_VERSION,
+      description: APP_DESCRIPTION,
     },
   },
+  apis: ['src/routes/*.route.ts'],
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
-
-console.log(swaggerOptions);
 
 export default {
   swaggerSpec,
