@@ -17,6 +17,11 @@ eslint:
 eslint-fix:
 	npm run eslint-fix
 
+# Cache clean up
+remove-cached-files:
+	rm -rf node_modules
+	rm -rf dist
+
 # Docker
 # Build the container image for production
 build-production:
