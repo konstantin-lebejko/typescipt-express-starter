@@ -1,6 +1,6 @@
 {
   "name": "typescript-express-starter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "typescript-express-starter",
   "scripts": {
     "build": "npx tsc",

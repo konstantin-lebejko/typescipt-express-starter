@@ -18,3 +18,12 @@ build-development:
 	docker build -t ${APP_NAME}\
 		--target development-build-stage\
 		-f Dockerfile .
+
+# Start container image for production
+production-stack-up:
+	make build-production
+	docker-compose -f docker-compose.yml --env-file .env.production up -d
+
+# Stop container image for production
+production-stack-down:
+	docker-compose -f docker-compose.yml --env-file .env.production down --remove-orphans
