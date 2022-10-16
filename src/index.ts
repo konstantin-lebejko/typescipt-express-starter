@@ -18,6 +18,7 @@ app.use(cookieParser());
 app.use(cors());
 app.use(helmet());
 app.use(hpp());
+app.use(express.json())
 
 // Routers
 const { healthCheckRouter } = routes;
